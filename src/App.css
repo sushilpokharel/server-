@@ -1,0 +1,74 @@
+/* Base styles - Mobile first */
+body {
+  background-color: #E84C3D;
+  margin: 0;
+  padding: 100px 20px;
+  font-family: Helvetica, sans-serif;
+  color: #fff;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin-top: 0;
+  font-weight: normal;
+}
+
+#img360 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+  animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Medium devices (tablets) */
+@media (min-width: 600px) {
+  body {
+    padding: 120px 40px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  #img360 {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+/* Large devices (desktops) */
+@media (min-width: 900px) {
+  body {
+    padding: 150px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  #img360 {
+    width: 200px;
+    height: 200px;
+  }
+}
